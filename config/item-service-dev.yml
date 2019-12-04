@@ -1,20 +1,20 @@
 spring:
   application:
     name: item-service
-<<<<<<< HEAD
   rabbitmq:
-<<<<<<< HEAD
-    host: 192.168.64.3
+    host: 192.168.64.5
     port: 5672
     username: admin
     password: admin
-
-
-
-#server:#  port: 8001
+    
+#server:
+#  port: 8001
   
-eureka:  client:    service-url: 
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka      
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+      
 ---
 spring:
   profiles: item1
@@ -28,36 +28,4 @@ spring:
   
 server:
   port: 8002
-=======
-    host: 192.168.64.5
-    port: 5672
-    username: admin
-    password: admin
-
-#server:#  port: 8001
-  
-eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
-
----
-spring:  profiles: item1
-server:  port: 8001
-
----
-spring:  profiles: item2
-server:  port: 8002
->>>>>>> branch 'master' of https://github.com/benwang6/sp-config.git
-=======
-    
-#server:#  port: 8001
-  
-eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
-
----
-spring:  profiles: item1
-server:  port: 8001
-
----
-spring:  profiles: item2
-server:  port: 8002
->>>>>>> branch 'master' of https://github.com/1743724478/sp-config
   
