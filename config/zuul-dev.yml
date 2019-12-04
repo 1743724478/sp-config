@@ -1,65 +1,3 @@
-<<<<<<< HEAD
-spring:
-  application:
-    name: zuul
-  rabbitmq:
-<<<<<<< HEAD
-    host: 192.168.64.3
-    port: 5672
-    username: admin
-    password: admin
-
-server:  port: 3001
-  
-eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
-
-#zuul:
-#  routes:#    item-service: /item-service/**
-#    user-service: /user-service/**
-#    order-service: /order-service/**
-
-zuul:
-  retryable: true
-  
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
-=======
-    host: 192.168.64.5
-    port: 5672
-    username: admin
-    password: admin
-    
-server:  port: 3001
-
-eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
-
-#zuul:
-#  routes:#    item-service: /item-serivce/**
-#    user-service: /user-serivce/**
-#    order-service: /order-serivce/**
-    
-    
-zuul:
-  retryable: true
-
-#ribbon:
-#  MaxAutoRetries: 0
-#  MaxAutoRetriesNextServer: 1
-    
-management:  endpoints:    web:      exposure:        include: hystrix.stream
-    
-    
-    
-    
-    
-    
-    
->>>>>>> branch 'master' of https://github.com/benwang6/sp-config.git
-    
-=======
 spring:
   application:
     name: zuul
@@ -70,20 +8,20 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
 
-#可不配置,缺省
 #zuul:
 #  routes:
 #    item-service: /item-service/**
 #    user-service: /user-service/**
 #    order-service: /order-service/**
+
 zuul:
   retryable: true
-#暴露hystrix.stream端点
+  
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
->>>>>>> branch 'master' of https://github.com/1743724478/sp-config
+    
